@@ -1,6 +1,9 @@
 <?php 
 function totalElement($array){
-    for ($i=0; $i < 5; $i++) { 
+
+    $count = count($array);
+
+    for ($i=0; $i < $count; $i++) { 
         $number = $array;
         unset($number[$i]);
         

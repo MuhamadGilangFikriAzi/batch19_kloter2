@@ -2,8 +2,8 @@
 
 function cetakGambar($length){
     $pattern = [
-        even($length),
-        odd($length)        
+        odd($length),
+        even($length)        
     ];
 
     for ($i=0; $i < $length; $i++) { 
@@ -16,7 +16,7 @@ function cetakGambar($length){
     }
 }
 
-function odd($number){
+function even($number){
     $array = [];
     for ($i=0; $i < $number; $i++) {         
         if($i % 2 == 0){
@@ -28,7 +28,7 @@ function odd($number){
     return $array;
 }
 
-function even($number){
+function odd($number){
     $array = [];
     for ($i=1; $i <= $number; $i++) { 
         
